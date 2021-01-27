@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/txt_titulo_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/encarga_tu_pizza_online"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_pizza" />
+
+    <EditText
+        android:id="@+id/edt_nombrep"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints=""
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:hint="@string/nombre_pizza"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_pizza" />
+
+    <EditText
+        android:id="@+id/edt_cantidadp"
+        android:layout_width="124dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/cantidad"
+        android:inputType="numberSigned"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_nombrep"
+        app:layout_constraintStart_toEndOf="@+id/edt_nombrep"
+        app:layout_constraintTop_toTopOf="@+id/edt_nombrep" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="60dp"
+        android:onClick="siguiente"
+        android:text="@string/siguiente"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombrep"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombrep" />
+</androidx.constraintlayout.widget.ConstraintLayout>

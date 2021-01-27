@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".VentaPizza2Activity">
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_descuento2x1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descuento2x1" />
+
+    <TextView
+        android:id="@+id/txt_cantidadt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cero"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_total"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cantidad2x1" />
+
+    <TextView
+        android:id="@+id/txt_descuento2x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/descuento_2x1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_iva"
+        app:layout_constraintTop_toBottomOf="@+id/txt_iva" />
+
+    <TextView
+        android:id="@+id/txt_cantidad2x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/cero"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_descuento2x1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cantidadi" />
+
+    <TextView
+        android:id="@+id/txt_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/iva"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_preciob"
+        app:layout_constraintTop_toBottomOf="@+id/txt_preciob" />
+
+    <TextView
+        android:id="@+id/txt_cantidadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:text="@string/cero"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_iva"
+        app:layout_constraintTop_toTopOf="@+id/txt_iva" />
+
+    <TextView
+        android:id="@+id/txt_titulo_venta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/encarga_tu_pizza_online"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/saldo_cuenta"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_venta2" />
+
+    <TextView
+        android:id="@+id/txt_cantidads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="@string/cero"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_saldo"
+        app:layout_constraintStart_toEndOf="@+id/txt_saldo" />
+
+    <Button
+        android:id="@+id/bt_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="usar_saldo"
+        android:text="@string/utilizar_saldo"
+        app:layout_constraintEnd_toEndOf="@+id/txt_saldo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saldo" />
+
+    <TextView
+        android:id="@+id/txt_preciob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/precio_base"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_cantidadb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/cero"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_preciob"
+        app:layout_constraintStart_toEndOf="@+id/txt_preciob" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

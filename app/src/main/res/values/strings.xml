@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VentaPizza</string>
+    <string name="encarga_tu_pizza_online">Encarga tu pizza Online</string>
+    <string name="nombre_pizza">Nombre Pizza</string>
+    <string name="todo">TODO</string>
+    <string name="cantidad">cantidad</string>
+    <string name="nombre_bebida">Nombre Bebida</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="saldo_cuenta">Saldo cuenta:</string>
+    <string name="cero">0.0</string>
+    <string name="utilizar_saldo">Utilizar Saldo</string>
+    <string name="precio_base">Precio Base:</string>
+    <string name="descuento_2x1">Descuento 2x1</string>
+    <string name="iva">IVA</string>
+    <string name="total">Total</string>
+</resources>
